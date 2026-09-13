@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A0000010000000000000001 /* FlastCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1000010000000000000001 /* FlastCardApp.swift */; };
+		9A0000020000000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1000020000000000000001 /* ContentView.swift */; };
+		9A0000030000000000000001 /* GrammarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1000030000000000000001 /* GrammarData.swift */; };
+		9A0000040000000000000001 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1000040000000000000001 /* Item.swift */; };
+		9A0000050000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A1000050000000000000001 /* Assets.xcassets */; };
+		9A0000060000000000000001 /* grammar.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A1000060000000000000001 /* grammar.json */; };
+		9A0001010000000000000001 /* FlastCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1001010000000000000001 /* FlastCardTests.swift */; };
+		9A0002010000000000000001 /* FlastCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1002010000000000000001 /* FlastCardUITests.swift */; };
+		9A0002020000000000000001 /* FlastCardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1002020000000000000001 /* FlastCardUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		180D51BC305677290046831D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A9000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A4000010000000000000001;
+			remoteInfo = FlastCard;
+		};
+		180D51BD305677290046831D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A9000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A4000010000000000000001;
+			remoteInfo = FlastCard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A1000000000000000000001 /* FlastCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlastCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1000010000000000000001 /* FlastCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlastCardApp.swift; sourceTree = "<group>"; };
+		9A1000020000000000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9A1000030000000000000001 /* GrammarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarData.swift; sourceTree = "<group>"; };
+		9A1000040000000000000001 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		9A1000050000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A1000060000000000000001 /* grammar.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = grammar.json; sourceTree = "<group>"; };
+		9A1000070000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A1001000000000000000001 /* FlastCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlastCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1001010000000000000001 /* FlastCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlastCardTests.swift; sourceTree = "<group>"; };
+		9A1002000000000000000001 /* FlastCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlastCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1002010000000000000001 /* FlastCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlastCardUITests.swift; sourceTree = "<group>"; };
+		9A1002020000000000000001 /* FlastCardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlastCardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A2000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2001010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A2002010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A3000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				9A3000010000000000000001 /* FlastCard */,
+				9A3001010000000000000001 /* FlastCardTests */,
+				9A3002010000000000000001 /* FlastCardUITests */,
+				9A3000030000000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A3000010000000000000001 /* FlastCard */ = {
+			isa = PBXGroup;
+			children = (
+				9A1000010000000000000001 /* FlastCardApp.swift */,
+				9A1000020000000000000001 /* ContentView.swift */,
+				9A1000030000000000000001 /* GrammarData.swift */,
+				9A1000040000000000000001 /* Item.swift */,
+				9A1000050000000000000001 /* Assets.xcassets */,
+				9A1000060000000000000001 /* grammar.json */,
+				9A1000070000000000000001 /* Info.plist */,
+			);
+			path = FlastCard;
+			sourceTree = "<group>";
+		};
+		9A3000030000000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A1000000000000000000001 /* FlastCard.app */,
+				9A1001000000000000000001 /* FlastCardTests.xctest */,
+				9A1002000000000000000001 /* FlastCardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A3001010000000000000001 /* FlastCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A1001010000000000000001 /* FlastCardTests.swift */,
+			);
+			path = FlastCardTests;
+			sourceTree = "<group>";
+		};
+		9A3002010000000000000001 /* FlastCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9A1002010000000000000001 /* FlastCardUITests.swift */,
+				9A1002020000000000000001 /* FlastCardUITestsLaunchTests.swift */,
+			);
+			path = FlastCardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A4000010000000000000001 /* FlastCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A5000010000000000000001 /* Build configuration list for PBXNativeTarget "FlastCard" */;
+			buildPhases = (
+				9A2000010000000000000001 /* Frameworks */,
+				9A6000010000000000000001 /* Sources */,
+				9A7000010000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlastCard;
+			productName = FlastCard;
+			productReference = 9A1000000000000000000001 /* FlastCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A4001010000000000000001 /* FlastCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A5001010000000000000001 /* Build configuration list for PBXNativeTarget "FlastCardTests" */;
+			buildPhases = (
+				9A2001010000000000000001 /* Frameworks */,
+				9A6001010000000000000001 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A8001010000000000000001 /* PBXTargetDependency */,
+			);
+			name = FlastCardTests;
+			productName = FlastCardTests;
+			productReference = 9A1001000000000000000001 /* FlastCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9A4002010000000000000001 /* FlastCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A5002010000000000000001 /* Build configuration list for PBXNativeTarget "FlastCardUITests" */;
+			buildPhases = (
+				9A2002010000000000000001 /* Frameworks */,
+				9A6002010000000000000001 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A8002010000000000000001 /* PBXTargetDependency */,
+			);
+			name = FlastCardUITests;
+			productName = FlastCardUITests;
+			productReference = 9A1002000000000000000001 /* FlastCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A9000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					9A4000010000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					9A4001010000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 9A4000010000000000000001;
+					};
+					9A4002010000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 9A4000010000000000000001;
+					};
+				};
+			};
+			buildConfigurationList = 9A5000000000000000000001 /* Build configuration list for PBXProject "FlastCard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				vi,
+			);
+			mainGroup = 9A3000000000000000000001;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9A3000030000000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A4000010000000000000001 /* FlastCard */,
+				9A4001010000000000000001 /* FlastCardTests */,
+				9A4002010000000000000001 /* FlastCardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A7000010000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0000050000000000000001 /* Assets.xcassets in Resources */,
+				9A0000060000000000000001 /* grammar.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A6000010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0000010000000000000001 /* FlastCardApp.swift in Sources */,
+				9A0000020000000000000001 /* ContentView.swift in Sources */,
+				9A0000030000000000000001 /* GrammarData.swift in Sources */,
+				9A0000040000000000000001 /* Item.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6001010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0001010000000000000001 /* FlastCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6002010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A0002010000000000000001 /* FlastCardUITests.swift in Sources */,
+				9A0002020000000000000001 /* FlastCardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A8001010000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A4000010000000000000001 /* FlastCard */;
+			targetProxy = 180D51BD305677290046831D /* PBXContainerItemProxy */;
+		};
+		9A8002010000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A4000010000000000000001 /* FlastCard */;
+			targetProxy = 180D51BC305677290046831D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9AB000000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92S43M6N6W;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FlastCard/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = c.FlastCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AB000010000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92S43M6N6W;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = FlastCard/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = c.FlastCard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9AB001000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasumiari.FlastCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlastCard.app/FlastCard";
+			};
+			name = Debug;
+		};
+		9AB001010000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasumiari.FlastCardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FlastCard.app/FlastCard";
+			};
+			name = Release;
+		};
+		9AB002000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasumiari.FlastCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlastCard;
+			};
+			name = Debug;
+		};
+		9AB002010000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kasumiari.FlastCardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FlastCard;
+			};
+			name = Release;
+		};
+		9AB010000000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+			};
+			name = Debug;
+		};
+		9AB010010000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A5000000000000000000001 /* Build configuration list for PBXProject "FlastCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB010000000000000000001 /* Debug */,
+				9AB010010000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A5000010000000000000001 /* Build configuration list for PBXNativeTarget "FlastCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB000000000000000000001 /* Debug */,
+				9AB000010000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A5001010000000000000001 /* Build configuration list for PBXNativeTarget "FlastCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB001000000000000000001 /* Debug */,
+				9AB001010000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A5002010000000000000001 /* Build configuration list for PBXNativeTarget "FlastCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AB002000000000000000001 /* Debug */,
+				9AB002010000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A9000000000000000000001 /* Project object */;
+}
