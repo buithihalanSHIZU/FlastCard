@@ -1,16 +1,12 @@
 {
-  "name": "JLPT N1 Grammar Flashcards",
-  "short_name": "JLPT N1",
+  "name": "臺灣華語 · Flashcard tiếng Trung Đài Loan",
+  "short_name": "臺灣華語",
   "lang": "vi-VN",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#f7f7f5",
+  "background_color": "#f4f3f0",
   "theme_color": "#e63946",
-  "description": "Flashcard ngữ pháp JLPT N1 Nhật - Việt",
-  "icons": [{
-    "src": "favicon.svg",
-    "sizes": "any",
-    "type": "image/svg+xml",
-    "purpose": "any maskable"
-  }]
+  "description": "Học chữ Hán phồn thể, Zhuyin, Pinyin và nghĩa tiếng Việt",
+  "icons": [{"src":"favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
 }

@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#e63946">
-  <meta name="description" content="Học flashcard và tự kiểm tra 141 mục ngữ pháp, biểu đạt JLPT N1 bằng tiếng Nhật và tiếng Việt.">
+  <meta name="description" content="Flashcard từ vựng tiếng Trung phồn thể Đài Loan: chữ Hán, Zhuyin, Pinyin và nghĩa tiếng Việt.">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="JLPT N1">
+  <meta name="apple-mobile-web-app-title" content="臺灣華語">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
-  <title>JLPT N1 Grammar</title>
+  <title>臺灣華語 · Flashcard</title>
 </head>
 <body>
   <main class="app-shell">
     <header class="app-header">
-      <div class="brand-mark">N1</div>
+      <div class="brand-mark">華</div>
       <div>
-        <p class="eyebrow">Flashcard tiếng Nhật</p>
-        <h1>JLPT N1 Grammar</h1>
-        <p class="muted" id="cardCountLabel">141 mẫu ngữ pháp và biểu đạt</p>
+        <p class="eyebrow">Flashcard tiếng Trung phồn thể</p>
+        <h1>臺灣華語 · Flashcard</h1>
+        <p class="muted" id="cardCountLabel">Đang tải bộ từ vựng…</p>
       </div>
       <button class="icon-button" id="menuButton" aria-label="Tùy chọn" title="Tùy chọn">•••</button>
       <div class="menu" id="menu" hidden>
@@ -48,14 +48,14 @@
         <button class="active" data-view="deck" role="tab">▣ &nbsp; Thẻ lật</button>
         <button data-view="list" role="tab">☷ &nbsp; Danh sách</button>
       </div>
-      <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" aria-label="Tìm ngữ pháp" aria-describedby="searchHelp searchError" placeholder="Nhập mẫu ngữ pháp hoặc nghĩa, có thể không dấu..." autocomplete="off" spellcheck="false" maxlength="200"><button id="clearSearch" aria-label="Xóa tìm kiếm" hidden>×</button></label>
+      <label class="search-box"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" aria-label="Tìm từ vựng" aria-describedby="searchHelp searchError" placeholder="Nhập chữ Hán, Pinyin, Zhuyin hoặc nghĩa…" autocomplete="off" spellcheck="false" maxlength="200"><button id="clearSearch" aria-label="Xóa tìm kiếm" hidden>×</button></label>
       <details class="search-options">
         <summary>Tùy chọn tìm kiếm</summary>
         <div class="search-options-grid">
           <label>Cách tìm<select id="searchMode" aria-label="Cách tìm"><option value="smart">Tất cả từ khóa</option><option value="phrase">Cụm từ liền nhau</option><option value="regex">Biểu thức chính quy (Regex)</option></select></label>
           <label>Tìm trong<select id="searchScope" aria-label="Phạm vi tìm kiếm"><option value="all">Toàn bộ nội dung</option><option value="title">Chỉ tên mẫu</option><option value="meaning">Chỉ ý nghĩa</option></select></label>
         </div>
-        <p class="search-help" id="searchHelp">Có thể gõ tiếng Việt không dấu, hiragana hoặc katakana. Kết quả chứa đủ từ khóa; tên mẫu được ưu tiên trước nghĩa và phần giải thích.</p>
+        <p class="search-help" id="searchHelp">Tìm chữ phồn thể, Zhuyin, Pinyin, âm Hán Việt hoặc nghĩa tiếng Việt.</p>
       </details>
       <p class="search-error" id="searchError" role="status" hidden></p>
       <div class="filter-row"><select id="groupSelect" aria-label="Lọc theo nhóm"><option value="all">▦ &nbsp; Tất cả nhóm</option></select><select id="statusSelect" aria-label="Lọc theo trạng thái"><option value="ALL">◌ &nbsp; Tất cả trạng thái</option><option value="NEW">○ &nbsp; Chưa học</option><option value="REVIEW">◷ &nbsp; Cần ôn lại</option><option value="MASTERED">✓ &nbsp; Đã thuộc</option></select><span class="result-count" id="resultCount" role="status" aria-live="polite">0 thẻ</span></div>
@@ -67,26 +67,23 @@
     <section id="quizView" class="quiz-view" hidden>
       <div class="quiz-heading">
         <p class="eyebrow">Active recall</p>
-        <h2>Kiểm tra ngữ pháp</h2>
-        <p class="muted">Hãy trả lời mà không nhìn mặt sau của thẻ.</p>
+        <h2>Kiểm tra từ vựng</h2>
+        <p class="muted">Tự trả lời trước khi đối chiếu. Kết quả ghi nhớ do bạn đánh giá.</p>
         <div class="quiz-actions"><button id="adaptiveQuizButton" type="button">⌁ Ôn thích ứng</button><span id="adaptiveQuizStatus"></span></div>
         <div id="quizHistorySummary" class="quiz-history-summary"></div>
       </div>
       <div class="quiz-card panel">
-        <div class="quiz-filter-row">
-          <label class="quiz-select-label" for="quizGroupSelect">Nhóm ngữ pháp</label>
-          <select id="quizGroupSelect" aria-label="Lọc nhóm ngữ pháp"></select>
-        </div>
-        <label class="quiz-select-label" for="quizCardSelect">Mẫu ngữ pháp</label>
-        <select id="quizCardSelect" aria-label="Chọn mẫu ngữ pháp"></select>
+        <div class="quiz-filter-row"><label class="quiz-select-label" for="quizGroupSelect">Bài học</label><select id="quizGroupSelect" aria-label="Lọc bài học"></select></div>
+        <label class="quiz-select-label" for="quizCardSelect">Từ vựng</label>
+        <select id="quizCardSelect" aria-label="Chọn từ vựng"></select>
         <div class="quiz-target" id="quizTarget"></div>
         <form id="quizForm">
-          <label class="quiz-field">1. Ý nghĩa (Tiếng Việt)<textarea id="quizMeaning" placeholder="Mẫu ngữ pháp này có nghĩa là gì?" required></textarea></label>
-          <label class="quiz-field">2. Cách dùng & cấu trúc kết hợp<textarea id="quizUsage" placeholder="Động từ chia thể gì? Vế B có dùng ý chí/mệnh lệnh không?" required></textarea></label>
-          <label class="quiz-field" id="quizDiff1Field">3. Điểm khác biệt 1<textarea id="quizDiff1" placeholder="So sánh với mẫu tương tự thứ nhất..." required></textarea></label>
-          <label class="quiz-field" id="quizDiff2Field">4. Điểm khác biệt 2<textarea id="quizDiff2" placeholder="So sánh với mẫu tương tự thứ hai..." required></textarea></label>
-          <label class="quiz-field">5. Tự đặt câu ví dụ (Tiếng Nhật)<input id="quizExampleJp" class="japanese-text" placeholder="Nhập câu tiếng Nhật của bạn..." required></label>
-          <button class="quiz-submit" type="submit">Chấm điểm</button>
+          <label class="quiz-field">1. Nghĩa tiếng Việt<textarea id="quizMeaning" placeholder="Từ này có nghĩa là gì?" required></textarea></label>
+          <label class="quiz-field">2. Âm Hán Việt<input id="quizHanViet" placeholder="Nhập âm Hán Việt…"></label>
+          <label class="quiz-field">3. Từ loại<input id="quizPos" placeholder="Danh từ, động từ…"></label>
+          <label class="quiz-field">4. Phân tích từng chữ Hán<textarea id="quizChars" placeholder="Ví dụ: 學 — Học · 習 — Tập"></textarea></label>
+          <label class="quiz-field" id="quizExampleField" hidden>5. Câu ví dụ (nếu có)<input id="quizExample" placeholder="Viết câu ví dụ bằng phồn thể…"></label>
+          <button class="quiz-submit" type="submit">Đối chiếu đáp án</button>
         </form>
       </div>
       <div id="quizResult" class="quiz-result panel" hidden></div>
