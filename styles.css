@@ -18,3 +18,40 @@
 .quiz-history-panel h3 { margin:0 0 8px; font:700 1rem 'Space Grotesk'; }
 .quiz-history-panel p { color:var(--muted); line-height:1.5; }
 .quiz-feedback em { display:block; }
+/* Taiwanese vocabulary cards only: retain all original shell, list, search and quiz styles. */
+.vocab-card { cursor:pointer; min-height:395px; transition:transform .18s ease, box-shadow .18s ease; }
+.vocab-card:focus-visible { outline:3px solid var(--red); outline-offset:3px; }
+.vocab-card:active { transform:scale(.994); }
+.vocab-card .card-front-content { display:flex; flex-direction:column; justify-content:center; gap:12px; }
+.vocab-card .card-front-content h2 { font-family:"PingFang TC","Noto Sans TC",sans-serif; font-size:clamp(2.9rem,12vw,4.6rem); line-height:1.4; overflow-wrap:anywhere; }
+.vocab-reading { font-size:clamp(1.05rem,4vw,1.55rem); font-weight:600; overflow-wrap:anywhere; }
+.vocab-pinyin { font-size:1.05rem; color:var(--muted); }
+.vocab-card .card-footer .group { max-width:58%; text-align:right; }
+.vocab-back { margin-top:10px; overflow:visible; }
+.vocab-back-head { text-align:center; padding:0 0 13px; border-bottom:1px solid var(--line); }
+.vocab-back-head h2 { margin:0 0 3px; font-family:"PingFang TC","Noto Sans TC",sans-serif; font-size:clamp(1.75rem,7vw,2.55rem); }
+.vocab-back-head strong { display:block; font-size:1.18rem; line-height:1.4; }
+.vocab-back-head p { margin-top:6px; font-size:.76rem; line-height:1.6; color:var(--muted); }
+.vocab-section-label { color:var(--red); letter-spacing:.065em; font-size:.67rem; font-weight:800; margin:16px 0 8px; }
+.hanzi-parts { display:grid; grid-template-columns:repeat(auto-fit,minmax(76px,1fr)); gap:7px; }
+.hanzi-part { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px; min-width:0; padding:9px 4px; background:var(--paper); border:1px solid var(--line); border-radius:11px; text-align:center; }
+.hanzi-part strong { font-family:"PingFang TC","Noto Sans TC",sans-serif; font-size:1.6rem; }
+.hanzi-part b { font-size:.81rem; }
+.hanzi-part small { color:var(--muted); font-size:.68rem; line-height:1.3; }
+.vocab-related { line-height:1.6; font-size:.83rem; }
+.vocab-example { background:var(--paper); border:1px solid var(--line); border-radius:11px; padding:11px; line-height:1.65; }
+.vocab-example b { display:block; font-family:"PingFang TC","Noto Sans TC",sans-serif; font-size:1.05rem; }
+.vocab-example small { display:block; color:var(--muted); font-size:.72rem; overflow-wrap:anywhere; }
+.vocab-example p { font-size:.81rem; }
+.vocab-return { margin-top:18px; text-align:center; color:var(--muted); font-size:.69rem; }
+.vocab-extra { margin-top:13px; font-size:.79rem; }.vocab-extra summary { cursor:pointer; color:var(--red); font-weight:700; }.vocab-extra p { white-space:pre-line; margin-top:7px; line-height:1.55; }
+.vocab-audio { display:block; width:100%; min-height:43px; margin-top:10px; background:var(--paper); border:1px solid var(--line); border-radius:11px; font-size:.85rem; font-weight:700; color:var(--ink); }
+.vocab-ratings { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:9px; }
+.vocab-ratings button { padding:12px 6px; min-height:44px; border:2px solid transparent; border-radius:11px; font-size:.83rem; font-weight:700; }
+.vocab-unknown { background:#ffeded; color:#ae3341; }.vocab-known { background:#e4f6ea; color:#08764d; }
+.vocab-unknown.selected { border-color:#ae3341; }.vocab-known.selected { border-color:#08764d; }
+.vocab-ratings+.deck-actions { justify-content:space-between; }
+.vocab-ratings+.deck-actions button { flex:0 1 48%; }
+@media (prefers-reduced-motion:reduce) { .vocab-card { transition:none; } }
+
+[hidden] { display:none !important; }
