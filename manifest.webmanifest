@@ -1,0 +1,16 @@
+{
+  "name": "JLPT N1 Grammar Flashcards",
+  "short_name": "JLPT N1",
+  "lang": "vi-VN",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f7f5",
+  "theme_color": "#e63946",
+  "description": "Flashcard ngữ pháp JLPT N1 Nhật - Việt",
+  "icons": [{
+    "src": "favicon.svg",
+    "sizes": "any",
+    "type": "image/svg+xml",
+    "purpose": "any maskable"
+  }]
+}

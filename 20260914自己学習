@@ -1,0 +1,6 @@
+HTML・CSS・JavaScriptを使用し、JLPT N1の文法学習用Webアプリケーションを作成した。
+・主な機能：フラッシュカード、確認テスト、学習進捗・履歴の保存、音声読み上げ、正規化・正規表現を用いた検索。
+・データ管理：文法データはJSON形式で管理し、学習履歴はブラウザ内に保存。
+・開発・実行環境：githubを活用して開発。PC・スマートフォンのブラウザで動作し、PWAに対応。
+作成した成果物：https://buithihalanshizu.github.io/skills-copilot-codespaces-vscode/
+
